@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Get Postal Code" icon-name="action:map">
+        <div class="slds-m-around_medium">
+            <lightning-input
+                label="Postal Code"
+                type="search"
+                value={postalCode}
+                class="string-input"
+                onchange={handlePostalCodeChange}
+            ></lightning-input>
+            <br>
+            <!--c-postalCodesOutput lwc:ref="postalCodeInfo"></c-postalCodesOutput-->
+            <c-postal-codes-output pcevent={postalCodeInfo} hidemessage={hideMessage}></c-postal-codes-output>
+        </div>
+    </lightning-card>
+</template>
