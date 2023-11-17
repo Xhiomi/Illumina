@@ -1,0 +1,8 @@
+<template>
+    <template lwc:if={pcevent}>
+        <p>{pcevent}</p>
+    </template>
+    <template if:false={hidemessage}>
+        <p>Please enter a valid postal code.</p>
+    </template>
+</template>
